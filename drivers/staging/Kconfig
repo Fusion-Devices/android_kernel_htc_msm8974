@@ -132,4 +132,6 @@ source "drivers/staging/htc_smem/Kconfig"
 
 source "drivers/staging/prima/Kconfig"
 
+source "drivers/staging/cpupower/Kconfig"
+
 endif # STAGING
