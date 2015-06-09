@@ -8150,7 +8150,7 @@ qpnp_charger_probe(struct spmi_device *spmi)
 
 	qpnp_chg_read(chip, &pmic_rev, REG_PMIC_HWREV, 1);
 #ifdef CONFIG_ARCH_MSM8974
-	r_debug("pm8941 HW revision: 0x%x\n",pmic_rev);
+	pr_debug("pm8941 HW revision: 0x%x\n",pmic_rev);
 #elif defined(CONFIG_ARCH_MSM8226)
 	pr_debug("pm8x26 HW revision: 0x%x\n",pmic_rev);
 #endif
